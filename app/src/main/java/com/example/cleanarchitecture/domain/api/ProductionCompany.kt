@@ -1,4 +1,4 @@
-package com.example.cleanarchitecture.api
+package com.example.cleanarchitecture.domain.api
 
 data class ProductionCompany(
     val id: Int,

@@ -2,9 +2,9 @@ package com.example.cleanarchitecture.data.repository
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.example.cleanarchitecture.data.MovieDataSource
-import com.example.cleanarchitecture.utility.Resource
-import com.example.cleanarchitecture.api.TheMovie
+import com.example.cleanarchitecture.data.retrofit.MovieDataSource
+import com.example.cleanarchitecture.domain.utility.Resource
+import com.example.cleanarchitecture.domain.api.TheMovie
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope

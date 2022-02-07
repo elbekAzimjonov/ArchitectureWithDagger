@@ -1,5 +1,5 @@
 package com.example.cleanarchitecture.data.retrofit
-import com.example.cleanarchitecture.api.TheMovie
+import com.example.cleanarchitecture.domain.api.TheMovie
 import retrofit2.http.GET
 
 interface ApiService {

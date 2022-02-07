@@ -1,4 +1,4 @@
-package com.example.cleanarchitecture.api
+package com.example.cleanarchitecture.domain.api
 
 data class TheMovie(
     val adult: Boolean,

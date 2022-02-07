@@ -1,4 +1,4 @@
-package com.example.cleanarchitecture.adapters
+package com.example.cleanarchitecture.presentation.adapters
 
 import android.view.LayoutInflater
 import android.view.View
@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.bitmap.CenterCrop
 import com.example.cleanarchitecture.R
-import com.example.cleanarchitecture.api.Cast
+import com.example.cleanarchitecture.domain.api.Cast
 
 class CastAdapter(private val castList: List<Cast>) :
     RecyclerView.Adapter<CastAdapter.CastViewHolder>() {

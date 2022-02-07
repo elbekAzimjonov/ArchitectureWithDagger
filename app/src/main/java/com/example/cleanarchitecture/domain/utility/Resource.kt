@@ -1,4 +1,4 @@
-package com.example.cleanarchitecture.utility
+package com.example.cleanarchitecture.domain.utility
 
 class Resource<out T>(val status: Status, val data: T?, val message: String?) {
     companion object {

@@ -7,7 +7,7 @@ import com.example.cleanarchitecture.di.module.AppModule
 
 
 class App : Application() {
- lateinit var applicationComponent: ApplicationComponent
+    lateinit var applicationComponent: ApplicationComponent
     override fun onCreate() {
         super.onCreate()
         applicationComponent = DaggerApplicationComponent

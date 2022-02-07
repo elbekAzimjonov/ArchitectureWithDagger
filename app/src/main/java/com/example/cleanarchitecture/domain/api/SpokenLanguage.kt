@@ -1,4 +1,4 @@
-package com.example.cleanarchitecture.api
+package com.example.cleanarchitecture.domain.api
 
 data class SpokenLanguage(
     val english_name: String,
