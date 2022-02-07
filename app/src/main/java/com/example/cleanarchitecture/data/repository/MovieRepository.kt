@@ -9,8 +9,11 @@ import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.launch
+import javax.inject.Inject
+import javax.inject.Singleton
 
-class MovieRepository(private val movieDataSource: MovieDataSource) {
+@Singleton
+class MovieRepository @Inject constructor(private val movieDataSource: MovieDataSource) {
 
     private val movieData = MutableLiveData<Resource<TheMovie>>()
 
