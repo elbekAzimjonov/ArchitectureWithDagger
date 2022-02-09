@@ -1,4 +1,4 @@
-package com.example.cleanarchitecture.presentation.ViewModel
+package com.example.cleanarchitecture.presentation.viewModel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
