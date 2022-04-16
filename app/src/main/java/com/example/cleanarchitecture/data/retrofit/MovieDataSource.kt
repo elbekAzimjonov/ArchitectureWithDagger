@@ -16,7 +16,7 @@ class MovieDataSource @Inject constructor(
 
     suspend fun getAllData(): LiveData<List<Cast>> = castDao.getAllCast()
 
-    suspend fun insertData(cast: Cast) {
+   suspend fun insertData(cast: Cast) {
         castDao.insertCast(cast)
     }
 }

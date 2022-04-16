@@ -3,12 +3,10 @@ package com.example.cleanarchitecture.data.repository
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.example.cleanarchitecture.data.retrofit.MovieDataSource
+import com.example.cleanarchitecture.domain.api.Cast
 import com.example.cleanarchitecture.domain.utility.Resource
 import com.example.cleanarchitecture.domain.api.TheMovie
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.async
-import kotlinx.coroutines.coroutineScope
-import kotlinx.coroutines.launch
+import kotlinx.coroutines.*
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -38,5 +36,11 @@ class MovieRepository @Inject constructor(private val movieDataSource: MovieData
 
     fun getAllMovie(): LiveData<Resource<TheMovie>> {
         return movieData
+    }
+
+    fun insertMovie(cast: Cast) {
+        CoroutineScope(Dispatchers.IO).launch {
+            movieDataSource.insertData(cast)
+        }
     }
 }
